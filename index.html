@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Tree - Дерево инструментов OSINT</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        h1 {
-            color: white;
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            max-width: 600px;
-            margin: 50px auto;
-        }
-        .info {
-            color: #333;
-            line-height: 1.8;
-            font-size: 1.1em;
-        }
-        .button {
-            display: inline-block;
-            background-color: #667eea;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 20px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .button:hover {
-            background-color: #764ba2;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARBOR · OSINT Tree</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>🌳 OSINT Tree</h1>
-        <p class="info">
-            Добро пожаловать на проект <strong>OSINT Tree</strong>! 
-            Здесь вы найдете полезные инструменты и ресурсы для открытых расследований.
-        </p>
-        <p class="info">
-            OSINT (Open Source Intelligence) - это методология сбора и анализа информации из открытых источников.
-        </p>
-        <a href="https://github.com/goncardanil40-creator/osinttree" class="button">📂 Перейти на GitHub</a>
+  <div class="noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark">◈</span>
+      <div>
+        <strong>ARBOR</strong>
+        <em>открытые источники · дерево утилит</em>
+      </div>
     </div>
+    <div class="stats">
+      <span><b id="count">0</b> утилит</span>
+      <span><b id="cats">0</b> веток</span>
+    </div>
+    <label class="search-wrap">
+      <input id="q" type="search" placeholder="поиск по дереву…" autocomplete="off" />
+    </label>
+  </header>
+
+  <main>
+    <aside class="legend">
+      <p class="lede">
+        Карта публичных OSINT-сервисов. Всё легально: поиск, архивы, метаданные, инфраструктура.
+        Не для взлома и не для самосуда — только разведка по открытым данным.
+      </p>
+      <nav id="toc"></nav>
+      <footer class="fine">
+        Ссылки ведут на официальные сайты. Проверяйте ToS и законы своей страны.
+      </footer>
+    </aside>
+
+    <section class="canvas-wrap">
+      <svg id="links" class="links" aria-hidden="true"></svg>
+      <div id="tree" class="tree"></div>
+    </section>
+  </main>
+
+  <div id="sheet" class="sheet hidden" role="dialog">
+    <button class="x" id="close">✕</button>
+    <h2 id="s-title"></h2>
+    <p class="tag" id="s-cat"></p>
+    <p id="s-desc"></p>
+    <a id="s-link" href="#" target="_blank" rel="noopener">открыть сервис →</a>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
