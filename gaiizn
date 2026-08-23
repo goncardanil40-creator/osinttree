@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARBOR · OSINT Tree</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark">◈</span>
+      <div>
+        <strong>ARBOR</strong>
+        <em>открытые источники · дерево утилит</em>
+      </div>
+    </div>
+    <div class="stats">
+      <span><b id="count">0</b> утилит</span>
+      <span><b id="cats">0</b> веток</span>
+    </div>
+    <label class="search-wrap">
+      <input id="q" type="search" placeholder="поиск по дереву…" autocomplete="off" />
+    </label>
+  </header>
+
+  <main>
+    <aside class="legend">
+      <p class="lede">
+        Карта публичных OSINT-сервисов. Всё легально: поиск, архивы, метаданные, инфраструктура.
+        Не для взлома и не для самосуда — только разведка по открытым данным.
+      </p>
+      <nav id="toc"></nav>
+      <footer class="fine">
+        Ссылки ведут на официальные сайты. Проверяйте ToS и законы своей страны.
+      </footer>
+    </aside>
+
+    <section class="canvas-wrap">
+      <svg id="links" class="links" aria-hidden="true"></svg>
+      <div id="tree" class="tree"></div>
+    </section>
+  </main>
+
+  <div id="sheet" class="sheet hidden" role="dialog">
+    <button class="x" id="close">✕</button>
+    <h2 id="s-title"></h2>
+    <p class="tag" id="s-cat"></p>
+    <p id="s-desc"></p>
+    <a id="s-link" href="#" target="_blank" rel="noopener">открыть сервис →</a>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
