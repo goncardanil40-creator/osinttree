@@ -1,7 +1,0 @@
-# TG Sentinel — зависимости
-# Создатель: @loomaxer · https://t.me/loomaxer
-#
-# Установка:  pip install -r requirements.txt
-# Поддерживаются обе ветки API: динамические option (Telethon 1.37+)
-# и легаси-схема с reason — скрипт определяет версию автоматически.
-telethon>=1.36,<3

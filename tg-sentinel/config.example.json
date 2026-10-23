@@ -1,8 +1,0 @@
-{
-  "_comment": "Скопируйте в config.json и впишите свои данные с https://my.telegram.org → API development tools. Создатель: @loomaxer",
-  "api_id": 0,
-  "api_hash": "ВАШ_API_HASH_ЗДЕСЬ",
-  "daily_limit": 5,
-  "max_flood_wait": 90,
-  "evidence_limit": 50
-}

@@ -16,15 +16,3 @@ Thumbs.db
 
 # Тестовые артефакты
 testsample.jpg
-
-# === TG Sentinel (tg-sentinel/) — чувствительные рантайм-данные ===
-tg-sentinel/sessions/
-tg-sentinel/evidence/
-tg-sentinel/drafts/
-tg-sentinel/config.json
-tg-sentinel/ledger.json
-tg-sentinel/report.html
-*.session
-*.session-journal
-.venv/
-venv/
