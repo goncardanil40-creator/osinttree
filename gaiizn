@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARBOR · OSINT Tree</title>
+  <meta name="author" content="@loomaxer (https://t.me/loomaxer)" />
+  <meta name="generator" content="OSINT Tree by @loomaxer" />
+  <title>ARBOR · OSINT Tree · @loomaxer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -36,7 +38,9 @@
       </p>
       <nav id="toc"></nav>
       <footer class="fine">
-        Ссылки ведут на официальные сайты. Проверяйте ToS и законы своей страны.
+        Ссылки ведут на официальные сайты. Проверяйте ToS и законы своей страны.<br /><br />
+        Создатель проекта: <a href="https://t.me/loomaxer" target="_blank" rel="noopener">@loomaxer</a>
+        · связь в Telegram: <a href="https://t.me/loomaxer" target="_blank" rel="noopener">t.me/loomaxer</a>
       </footer>
     </aside>
 
@@ -53,6 +57,8 @@
     <p id="s-desc"></p>
     <a id="s-link" href="#" target="_blank" rel="noopener">открыть сервис →</a>
   </div>
+
+  <div class="creator-badge">◈ создатель: <a href="https://t.me/loomaxer" target="_blank" rel="noopener">@loomaxer</a></div>
 
   <script src="data.js"></script>
   <script src="app.js"></script>

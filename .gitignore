@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Экспортируемые отчёты OSINT Tree (создаются пользователем)
+reports/
+*.report.json
+*.report.html
+
+# Системное
+.DS_Store
+Thumbs.db
+
+# Тестовые артефакты
+testsample.jpg
