@@ -1,3 +1,15 @@
+/* ============================================================================
+ * OSINT TREE — логика интерфейса дерева.
+ * Создатель: @loomaxer · https://t.me/loomaxer
+ * ========================================================================== */
+
+// Водяной знак создателя в консоли браузера
+console.log(
+  "%c◈ OSINT TREE %c· создатель: @loomaxer · t.me/loomaxer",
+  "background:#131c2e;color:#4fd1c5;padding:4px 8px;border-radius:6px 0 0 6px;font-weight:bold;",
+  "background:#0a0e16;color:#7c8cff;padding:4px 8px;border-radius:0 6px 6px 0;"
+);
+
 const treeEl = document.getElementById("tree");
 const toc = document.getElementById("toc");
 const q = document.getElementById("q");
@@ -11,7 +23,7 @@ function countLeaves(node) {
 function render() {
   const cats = TREE.children;
   document.getElementById("cats").textContent = cats.length;
-  document.getElementById("count").textContent = countLeaves(TREE) - 1 - cats.length;
+  document.getElementById("count").textContent = countLeaves(TREE);
 
   treeEl.innerHTML = `<div class="root-title">◈ Arbor</div>`;
   toc.innerHTML = "";
