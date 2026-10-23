@@ -126,6 +126,17 @@ python3 osinttree.py selftest
 # Итог: 15/15 проверок пройдено
 ```
 
+## 🛡 Ещё один проект автора: TG Sentinel
+
+В папке **[`tg-sentinel/`](tg-sentinel/)** лежит отдельный мощный инструмент на **Telethon** — подача доказательных жалоб на Telegram-ботов и каналы, распространяющие чужие персональные данные (доксинг, сливы баз, деанон):
+
+- официальные методы MTProto `account.reportPeer` / `messages.report` с причиной «Разглашение персональных данных»;
+- автоматический сбор доказательств, PII-сканер, журнал-леджер, суточные лимиты и защита от FloodWait;
+- dry-run по умолчанию, черновики писем в поддержку Telegram и форму GitHub, HTML-отчёты;
+- красивая анимация в терминале и водяные знаки @loomaxer везде.
+
+Документация: [tg-sentinel/README.md](tg-sentinel/README.md) · правила и ответственность: [tg-sentinel/DISCLAIMER.md](tg-sentinel/DISCLAIMER.md)
+
 ## 📄 Лицензия
 
 [MIT](LICENSE) · Copyright (c) 2026 **[@loomaxer](https://t.me/loomaxer)**
